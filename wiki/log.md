@@ -1,7 +1,7 @@
 ---
 title: "Wiki Log"
 type: synthesis
-source_count: 3
+source_count: 4
 last_updated: 2026-06-22
 tags: [log, history]
 ---
@@ -9,6 +9,17 @@ tags: [log, history]
 # Wiki Log
 
 wiki 的 append-only 历史记录，包括摄入、查询和 lint。
+
+## [2026-06-22] ingest | Chapter 4. Storage and Retrieval
+
+- 阅读 `raw/chapter4/04.md`
+- 创建 source summary：[[chapter-04]]
+- 新建 concepts：[[storage-engine]]、[[index]]、[[primary-index]]、[[secondary-index]]、[[clustered-index]]、[[heap-file]]、[[covering-index]]、[[b-tree]]、[[lsm-tree]]、[[sstable]]、[[memtable]]、[[compaction]]、[[bloom-filter]]、[[write-ahead-log]]、[[tombstone]]、[[log-structured-storage]]、[[in-memory-database]]、[[embedded-database]]、[[fragmentation]]、[[backpressure]]、[[write-amplification]]、[[read-amplification]]、[[sequential-write]]、[[random-write]]、[[garbage-collection-ssd|SSD garbage collection]]、[[column-oriented-storage]]、[[row-oriented-storage]]、[[column-compression]]、[[bitmap-index]]、[[run-length-encoding]]、[[roaring-bitmaps]]、[[query-compilation]]、[[vectorized-processing]]、[[data-cube]]、[[multidimensional-index]]、[[r-tree]]、[[space-filling-curve]]、[[inverted-index]]、[[postings-list]]、[[n-gram]]、[[semantic-search]]、[[vector-embedding]]、[[vector-index]]、[[flat-index]]、[[ivf]]、[[hnsw]]、[[parquet]]（已存在，更新）、[[orc]]、[[lance]]、[[nimble]]、[[apache-arrow]]、[[apache-iceberg]]、[[delta-lake]]、[[table-format]]、[[data-catalog]]、[[query-engine]]
+- 更新 concepts：[[full-text-search]]、[[materialized-view]]、[[wide-column-store]]、[[search-index]]、[[database]]、[[online-transaction-processing|OLTP]]、[[online-analytical-processing|OLAP]]、[[data-warehouse]]
+- 新建 entities：[[rocksdb]]、[[leveldb]]、[[sqlite]]、[[lmdb]]、[[cassandra]]、[[scylladb]]、[[voltdb]]、[[singlestore]]、[[oracle-timesten]]、[[ramcloud]]、[[redis]]、[[memcached]]、[[innodb]]、[[sql-server]]、[[lucene]]、[[elasticsearch]]、[[solr]]、[[vertica]]、[[teradata]]、[[sap-hana]]、[[apache-pinot]]、[[apache-druid]]、[[bigquery]]、[[amazon-redshift]]、[[apache-hive]]、[[trino]]、[[presto]]、[[apache-datafusion]]、[[faiss]]、[[pgvector]]、[[pinecone]]、[[weaviate]]、[[milvus]]、[[qdrant]]、[[word2vec]]、[[bert]]、[[gpt]]、[[postgis]]、[[influxdb]]、[[timescaledb]]、[[polaris]]、[[unity-catalog]]、[[materialize]]
+- 更新 entities：[[clickhouse]]、[[duckdb]]、[[bigtable]]、[[hbase]]、[[kuzudb]]、[[mysql]]、[[postgresql]]、[[snowflake]]、[[spark]]、[[oracle]]
+- 更新 [[index]] 与本 log
+- Backfill：更新 [[chapter-03]] 和 [[chapter-01]] 中关于 Chapter 4 的前向引用；更新 [[full-text-search]] 占位内容
 
 ## [2026-06-22] ingest | Chapter 3. Data Models and Query Languages
 

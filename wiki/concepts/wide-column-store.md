@@ -1,7 +1,7 @@
 ---
 title: "Wide-Column Store"
 type: concept
-source_count: 1
+source_count: 2
 last_updated: 2026-06-22
 tags: [data-systems, databases, nosql]
 ---
@@ -20,8 +20,15 @@ tags: [data-systems, databases, nosql]
 
 Wide-column store 保留了行和列的概念，但列可以动态增加，同一张表的不同行可以有不同的列。它介于 relational 和 pure key-value store 之间。
 
+## 重要区分
+
+Wide-column store **不是** [[column-oriented-storage|列式存储]]。尽管名字相似，wide-column store 仍然是**行式存储**：同一行的所有列值存储在一起。Google Bigtable、Apache HBase、Apache Accumulo 都属于 wide-column / row-oriented 系统。
+
 ## 相关
 
 - [[data-locality]]
 - [[bigtable]]
+- [[column-oriented-storage]]
+- [[row-oriented-storage]]
 - [[chapter-03]]
+- [[chapter-04]]

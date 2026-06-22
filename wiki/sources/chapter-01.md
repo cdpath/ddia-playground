@@ -59,6 +59,6 @@ tags: [chapter-summary, data-systems, trade-offs]
 ## 待后续章节展开的线索
 
 - 第 2 章将深入 [[reliability]]、[[scalability]]、[[maintainability]]。
-- 第 4 章会探讨 operational 与 analytical 系统如何使用截然不同的内部存储布局。
+- [[chapter-04]] 已探讨 operational 与 analytical 系统如何使用截然不同的内部存储布局（[[b-tree]] / [[lsm-tree]] vs [[column-oriented-storage]]）。
 - 第 9 章会详细讨论 distributed system 的 failure mode。
 - 第 14 章会回到伦理、偏见与法律合规。
