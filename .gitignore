@@ -1,0 +1,32 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python runtime
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Local databases created by demos
+*.sqlite
+*.sqlite3
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Obsidian workspace config
+.obsidian/

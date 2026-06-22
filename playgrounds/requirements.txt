@@ -1,0 +1,25 @@
+# Playground dependencies
+#
+# 注意：本项目已迁移到 uv 管理依赖，详见仓库根目录的 pyproject.toml。
+# 请使用 `uv sync` 安装依赖，而不是 pip install -r requirements.txt。
+#
+# 如果你确实想用 pip，可以参考 pyproject.toml 中的 [dependency-groups].dev：
+#   notebook, nbconvert, ipykernel
+#
+# Most notebooks use only the Python standard library (sqlite3, json, time, etc.).
+# You only need to install packages listed below if a specific notebook mentions it.
+
+# Core Jupyter environment
+# notebook
+# jupyterlab
+
+# Optional: interactive widgets for parameter tuning
+# ipywidgets
+
+# Optional: data analysis and visualization
+# pandas
+# numpy
+# matplotlib
+
+# Optional: notebook testing and conversion
+# nbconvert

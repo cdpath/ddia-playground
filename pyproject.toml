@@ -1,0 +1,19 @@
+[project]
+name = "ddia-playground"
+version = "0.1.0"
+description = "Interactive playgrounds for Designing Data-Intensive Applications"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "notebook",
+    "nbconvert",
+    "ipykernel",
+]
+
+[tool.uv]
+default-groups = ["dev"]
