@@ -10,6 +10,8 @@ tags: [storage, index, oltp]
 
 **Log-Structured Merge-Tree**（**LSM-tree**）是一种[[log-structured-storage]]索引结构，由 O’Neil 等人于 1996 年提出。它通过维护一组按 key 排序、不可变的 [[sstable]] 文件，并在后台不断合并这些文件，来兼顾高写入吞吐与可接受的读取性能。
 
+> 可运行示例：[LSM-tree vs B-tree 的读写权衡](../../playgrounds/ch04-storage-and-retrieval/01-lsm-vs-btree.ipynb)
+
 ## 说明
 
 LSM-tree 的工作流程：

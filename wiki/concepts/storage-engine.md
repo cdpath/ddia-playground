@@ -10,6 +10,8 @@ tags: [database, storage, oltp, olap]
 
 **Storage engine** 是数据库中负责实际存储和检索数据的底层模块。它决定数据如何落盘、如何索引、如何支持并发读写，以及如何在崩溃后恢复。
 
+> 可运行示例：[LSM-tree vs B-tree 的读写权衡](../../playgrounds/ch04-storage-and-retrieval/01-lsm-vs-btree.ipynb)
+
 ## 说明
 
 数据库通常由上层查询处理器和底层 storage engine 组成。storage engine 关心的是：

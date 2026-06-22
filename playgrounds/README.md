@@ -45,12 +45,21 @@ uv run python playgrounds/ch03-data-models/01-n-plus-one.py
 - [01-n-plus-one](ch03-data-models/01-n-plus-one.ipynb) — N+1 query problem：ORM 的陷阱、JOIN 与 batch loading 的对比
 - [01-n-plus-one.py](ch03-data-models/01-n-plus-one.py) — 同上，Zed / Jupyter / VS Code 兼容的 `# %%` cell 格式
 
+### Chapter 4 — Storage and Retrieval
+
+- [01-lsm-vs-btree](ch04-storage-and-retrieval/01-lsm-vs-btree.ipynb) — LSM-tree vs B-tree：存储引擎的读写权衡、写放大与读放大
+- [01-lsm-vs-btree.py](ch04-storage-and-retrieval/01-lsm-vs-btree.py) — 同上，Zed / Jupyter / VS Code 兼容的 `# %%` cell 格式
+
 ## 相关 Wiki 页面
 
 - [Wiki 首页](../wiki/index.md)
 - [Chapter 3 源总结](../wiki/sources/chapter-03.md)
+- [Chapter 4 源总结](../wiki/sources/chapter-04.md)
 - [Object-Relational Mapping](../wiki/concepts/object-relational-mapping.md)
 - [Impedance Mismatch](../wiki/concepts/impedance-mismatch.md)
 - [Join](../wiki/concepts/join.md)
+- [Storage Engine](../wiki/concepts/storage-engine.md)
+- [LSM-Tree](../wiki/concepts/lsm-tree.md)
+- [B-Tree](../wiki/concepts/b-tree.md)
 
-在 Obsidian 中打开本仓库时，也可以直接使用 `[[wiki-index]]`、`[[chapter-03]]`、`[[object-relational-mapping]]` 等内部链接导航。
+在 Obsidian 中打开本仓库时，也可以直接使用 `[[wiki-index]]`、`[[chapter-03]]`、`[[chapter-04]]`、`[[object-relational-mapping]]` 等内部链接导航。

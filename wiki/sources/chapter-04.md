@@ -125,6 +125,10 @@ tags: [storage, indexing, oltp, olap]
 
 - [[word2vec]]、[[bert]]、[[gpt]]
 
+## Playground
+
+- [LSM-tree vs B-tree 的读写权衡](../../playgrounds/ch04-storage-and-retrieval/01-lsm-vs-btree.ipynb)：用标准库模拟两种存储引擎，观察写入放大、读取放大与 Bloom filter 效果。
+
 ## 待后续章节展开的线索
 
 - 崩溃恢复、 durability 和并发事务的语义将在 [[chapter-08]] 深入。

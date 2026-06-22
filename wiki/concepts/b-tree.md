@@ -10,6 +10,8 @@ tags: [data-structures, storage, index]
 
 **B-tree** 是一种自平衡的树状数据结构，1970 年由 Bayer 和 McCreight 提出。它是数据库中最常用的索引实现，广泛应用于关系型数据库（如 [[postgresql]]、[[mysql]] InnoDB、[[sql-server]]）和许多非关系型数据库。
 
+> 可运行示例：[LSM-tree vs B-tree 的读写权衡](../../playgrounds/ch04-storage-and-retrieval/01-lsm-vs-btree.ipynb)
+
 ## 说明
 
 B-tree 把数据分成固定大小的 **page**（块），传统大小为 4 KiB，PostgreSQL 默认 8 KiB，MySQL InnoDB 默认 16 KiB。每个 page 包含若干 key 和指向子 page 的引用，子 page 负责一个连续的 key range。
