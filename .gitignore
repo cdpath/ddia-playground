@@ -30,3 +30,8 @@ ENV/
 
 # Obsidian workspace config
 .obsidian/
+
+# Raw source material and derived EPUB files
+# These are generated from the book EPUB and should not be committed.
+raw/
+*.epub
