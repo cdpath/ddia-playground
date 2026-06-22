@@ -93,4 +93,22 @@ When processing a new chapter:
 - **Language:** wiki content is written in **Chinese**, but technical terms, system names, and acronyms stay in English. For example: "一个 **data-intensive application** 由 [[database]]、[[cache]]、[[search-index]] 等组件组成。" Keep terms such as OLTP, OLAP, ETL, HTAP, FaaS, GDPR, microservices, serverless, cloud-native, data warehouse, data lake, system of record, derived data, data minimization, and system names (MySQL, PostgreSQL, Snowflake, S3, etc.) untranslated.
 - **Forward references:** When a source summary or concept page says a topic will be discussed in a later chapter, treat it as a promise. When that later chapter is ingested, backfill the referenced page and update or remove the placeholder sentence. Use the source summary’s “Open threads” section to make these promises explicit.
 
+### Translation traps
+
+When translating or paraphrasing English source material into Chinese for the wiki and playgrounds, preserve the **agency** and **causality** of the original. English technical writing often describes tools, frameworks, or systems as the actors that *cause* or *generate* behavior. Do not silently rewrite these sentences to make the human developer the actor.
+
+- **Preserve who generates what.**  
+  - Misleading: "ORM 的 lazy-loading 可能会让你不自觉地写出这样的代码：……"  
+    This implies the developer writes the N+1 queries by hand.  
+  - Better: "ORM 的 lazy-loading 机制可能会在你不知不觉中生成这样的查询：……"  
+    This correctly attributes the generated queries to the ORM.
+
+- **Distinguish "makes it easy to X" from "causes you to X".**  
+  English phrases like "makes it easy to accidentally write..." describe an affordance or risk, not an accusation. Chinese renderings such as "让你不自觉地..." can shift blame/intentionality to the reader. Use "容易导致..." or "可能自动生成..." instead.
+
+- **Watch for subject-verb reordering.**  
+  Chinese often drops the explicit subject, which can make a tool-generated action sound like a user action. When in doubt, keep the tool/system as the explicit subject.
+
+If a translated sentence would change who is doing the action, flag it and rephrase.
+
 See `CLAUDE.md` for the full schema, page templates, and detailed workflows.
